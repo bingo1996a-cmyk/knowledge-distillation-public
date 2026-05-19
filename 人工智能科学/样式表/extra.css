@@ -1,0 +1,105 @@
+/* 人工智能科学知识库 - 自定义样式 */
+
+:root {
+  --kb-primary: #3949ab;
+  --kb-primary-light: #7986cb;
+  --kb-accent: #1e88e5;
+  --kb-bg: #f8f9fa;
+}
+
+/* 标题样式 */
+.md-typeset h1 {
+  color: var(--kb-primary);
+  font-weight: 600;
+  border-bottom: 2px solid var(--kb-primary-light);
+  padding-bottom: 0.3em;
+}
+
+.md-typeset h2 {
+  color: var(--kb-primary);
+  font-weight: 500;
+}
+
+.md-typeset h3 {
+  color: #333;
+  font-weight: 500;
+}
+
+/* 表格样式 */
+.md-typeset table:not([class]) {
+  font-size: 0.78rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--kb-primary);
+  color: white;
+  font-weight: 500;
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: var(--kb-bg);
+}
+
+/* 代码块 */
+.md-typeset code {
+  font-size: 0.8em;
+  border-radius: 3px;
+}
+
+.md-typeset pre > code {
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* 引用块 */
+.md-typeset blockquote {
+  border-left: 4px solid var(--kb-primary-light);
+  background-color: var(--kb-bg);
+  padding: 0.5em 1em;
+  border-radius: 0 4px 4px 0;
+}
+
+/* 标签页导航 */
+.md-tabs {
+  background-color: var(--kb-primary);
+}
+
+/* 搜索框高亮 */
+.md-search-result mark {
+  color: var(--kb-accent);
+}
+
+/* 导航链接悬停 */
+.md-nav__link:hover {
+  color: var(--kb-accent) !important;
+}
+
+/* 当前页高亮 */
+.md-nav__item--active > .md-nav__link {
+  color: var(--kb-primary);
+  font-weight: 500;
+}
+
+/* admonition 样式 */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* 任务列表 */
+.md-typeset .task-list-control [type="checkbox"]:checked + .task-list-indicator::before {
+  background-color: var(--kb-primary);
+}
+
+/* 页脚 */
+.md-footer-meta {
+  background-color: #1a237e;
+}
+
+/* 内容宽度 */
+.md-grid {
+  max-width: 64rem;
+}

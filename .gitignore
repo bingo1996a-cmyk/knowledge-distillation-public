@@ -1,0 +1,40 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Static site / docs tooling
+site/
+.mkdocs-cache/
+metadata-index.json
+
+# Local curation artifacts
+docs/vision/
+V*-更新报告.md
+更新计划.md
+愿景路线图.md
+待办清单.md
+待办事项.md
+更新日志.md
+变更日志.md
+统计面板.md
+仓库维护策略.md
+元数据规范.md
+mkdocs.yml
+scripts/
+20-更新日志/
+
+# Node
+node_modules/
+
+# Local temp
+*.tmp
+*.temp
